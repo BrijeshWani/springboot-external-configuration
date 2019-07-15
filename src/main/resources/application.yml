@@ -1,0 +1,27 @@
+spring.application.name: springboot-external-configuration
+server.port: 8080
+
+custom.properties.app.name: SpringbootExternalConfiguration
+
+my.secret: ${random.value}
+my.number: ${random.int}
+my.bignumber: ${random.long}
+my.uuid: ${random.uuid}
+my.number.less.than.ten: ${random.int(10)}
+my.number.in.range: ${random.int[1,5]}
+
+
+prefix: Prefixxxxxx
+postfix: Postfixxxxxxx
+appended.property: ${prefix} is prefix and ${postfix} is postfix.
+
+server:
+  names:
+    - server1
+    - server2
+    
+mapexample:
+  map: 
+    "[name1]": "Brijesh"
+    "[name2]": "Rajesh"
+    "[name3]": "Paresh" 
